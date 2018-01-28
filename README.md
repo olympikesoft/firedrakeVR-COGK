@@ -30,3 +30,18 @@ game is automatically saved when player takes off headset and  quites and will r
 game can puase at the exzact point in the level when player pauses game or removes headset, if player puts headset back on or unpuases then game play is picked up exactly where they left off in the level.
 
 Game preformance is key and  app MUST maintain a 60FPS rate at all times.  So adding this check to the UPDATE() loop seems like it will incure a preformance cost.
+
+
+Scripts attached:
+
+Splashload_c.cs:  loads the intro scene, waits five seconds then loads the next playable level (in this case scne 1)
+controller_requires.cs:  Checks the status of the controller:
+
+Problem:  I can't combine the logic of laod screen and controller check into once script.  my C# is to weak.
+
+Goal:
+
+Either combine these two scripts so that splash screen loads,  checks controller states; if controller preseten :waits for five seconds displaying splash screen graphic and then fades into next level. If not present, then loads the scene (nojoy) that explains that no controller is prenet and quits app
+
+Or change require-joystick.cs to a run once (quickly and silently)  maybe on startup or on awake ()????   of any scene allowing for  a sperate splashscreen loader to work and checking the status of the connected controller.
+
