@@ -24,3 +24,5 @@ public class RequireJoystick : MonoBehaviour
 		}
 	}
 }
+
+//https://www.youtube.com/watch?v=384_g0f7K_I
